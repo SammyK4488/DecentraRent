@@ -1,73 +1,124 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# 🏠 DecentraRent
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+DecentraRent is a decentralized rental platform (DApp) that allows landlords and tenants to interact transparently via blockchain smart contracts. Built with a modern frontend and a Solidity-based smart contract backend, the project aims to disrupt the traditional rental system with secure, trustless agreements.
 
-Currently, two official plugins are available:
+## 🌐 Live Project
+**GitHub Repo:** [https://github.com/SammyK4488/DecentraRent](https://github.com/SammyK4488/DecentraRent)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✅ Features Completed
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🎨 Frontend (React + Vite)
+- [x] Initial UI scaffolding built with **React** and **Vite**
+- [x] Pages structured (e.g., Home, Dashboard, Listings)
+- [x] Faded color theme with custom **logo integration**
+- [x] Basic routing and layout using React Router
+- [x] .gitignore properly configured (e.g., `node_modules` excluded)
+- [x] Frontend GitHub push successful
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🧠 Smart Contract (Solidity)
+- [x] Basic Solidity smart contract for rental logic deployed
+- [x] Uses Ethereum-based network (e.g., Sepolia Testnet)
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+### 🔧 Dev Environment Setup
+- [x] Node.js v20 configured
+- [x] Vite development server fixed
+- [x] Local build runs with `npm run dev`
+- [x] Merge conflicts resolved
+- [x] GitHub synced with local development
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔨 To-Do / In Progress
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 👥 Role-aware UI
+- [ ] Tenant and Landlord role detection
+- [ ] Dynamic page content based on role
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-=======
-# DecentraRent
->>>>>>> 2aa457b96b67886fe09a96a8849c16dd949a81a5
+### 🔐 Wallet Connection & Web3 Integration
+- [ ] Add **MetaMask** login using Ethers.js or Web3.js
+- [ ] Connect smart contract functions to frontend
+
+### 🧪 Backend (Optional)
+- [ ] Add data persistence layer with **Firebase** or **Supabase**
+- [ ] Store listing metadata off-chain (e.g., images, pricing)
+
+### 📱 Mobile Readiness
+- [ ] Convert frontend into a **React Native** or **Expo** mobile app
+
+### 🚀 Deployment
+- [ ] Deploy frontend to **Vercel** or **Netlify**
+- [ ] Confirm smart contract is deployed to testnet
+- [ ] Add testnet instructions to README
+
+---
+
+## 💻 Getting Started
+
+### Prerequisites
+- Node.js (v20+)
+- Vite
+- Git
+
+### Install and Run Locally
+```bash
+# Clone the repo
+git clone https://github.com/SammyK4488/DecentraRent.git
+
+# Navigate into frontend directory
+cd decentralrent-contracts/decentralrent-frontend
+
+# Install dependencies
+npm install
+
+# Run the dev server
+npm run dev
+
+📁 Project Structure
+
+decentralrent-contracts/
+├── decentralrent-frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.tsx
+│   ├── .gitignore
+│   ├── package.json
+│   ├── vite.config.ts
+├── decentralrent-contracts/  <-- Solidity contracts
+
+✨ Technologies Used
+
+Frontend: React, Vite, TypeScript, CSS Modules
+Smart Contract: Solidity, Hardhat (or similar)
+Web3: Ethers.js (planned)
+CI/CD: GitHub
+Future Backend: Firebase or Supabase
+
+🙌 Credits
+
+Developed by Mohamed Bundu and the DecentraRent Team.
+Special thanks to contributors and the open-source blockchain community.
+
+📌 License
+
+This project is licensed under the MIT License. Feel free to fork, modify, or contribute!
+
+
+---
+
+### ✅ Next Step for You
+
+1. Save this as `README.md` in the root of your frontend folder:
+```bash
+nano README.md
+# Paste content, save with Ctrl + X → Y → Enter
+Then push it:
+git add README.md
+git commit -m "Updated README with full project info"
+git push origin main
+
+
+
