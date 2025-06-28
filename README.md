@@ -60,6 +60,18 @@ DecentraRent is a decentralized rental platform (DApp) that allows landlords and
 - Node.js (v20+)
 - Vite
 - Git
+‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️
+🔧 Fix Local Dev Environment (Vite Issue)
+Run:
+
+npm install
+Then:
+
+npm run dev
+If vite is still not recognized, run:
+
+npm install vite --save-dev
+‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️‼️
 
 ### Install and Run Locally
 ```bash
